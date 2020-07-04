@@ -1,7 +1,7 @@
 # Verilog_basics
 This contains basics of verilog codes
 
-1. Implementation of I2C protocol using verilog :
+ Implementation of I2C protocol using verilog :
 
 a) Separate master and slave codes
 b) Master can be implemented as set of tasks( write, read, multibyte write, multibyte read )
