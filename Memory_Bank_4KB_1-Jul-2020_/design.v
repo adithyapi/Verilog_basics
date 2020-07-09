@@ -1,9 +1,6 @@
 /*-----------------------------------------------------
-  Author: Adithya Pai 
-  Guided By: Chiatra KP
   File Name : design.v (Memory_bank_4KB)
   Function : Memory bank of 4KB each bank containing 1KB 
-  Company: KarMic Design Pvt Ltd (Manipal)
   Language: Verilog 
 */-----------------------------------------------------
 
