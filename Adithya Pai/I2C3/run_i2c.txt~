@@ -1,0 +1,10 @@
+design.v
+slave.v
+top_module.v
+top_module_tb.v
+
+
+
+-access +rwc
+-input probe.tcl
+

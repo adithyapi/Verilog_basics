@@ -1,0 +1,170 @@
+irun(64): 13.10-s016: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	irun(64)	13.10-s016: Started on Jul 09, 2020 at 09:54:10 IST
+irun
+	-f run_i2c.txt
+		design.v
+		slave.v
+		top_module_tb.v
+		-access +rwc
+		-input probe.tcl
+Recompiling... reason: file './top_module_tb.v' is newer than expected.
+	expected: Thu Jul  9 09:51:42 2020
+	actual:   Thu Jul  9 09:53:46 2020
+file: top_module_tb.v
+	module worklib.top_module_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top_module_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top_module_tb:v <0x568bcda0>
+			streams:   1, words:  1010
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              35      35
+		Scalar wires:            6       -
+		Always blocks:           4       4
+		Initial blocks:          3       3
+		Cont. assignments:       2       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top_module_tb:v
+Loading snapshot worklib.top_module_tb:v .................... Done
+ncsim> source /home/cad/INCISIV131/tools/inca/files/ncsimrc
+ncsim> database -open waves_mastertb -default
+Created default SHM database waves_mastertb
+ncsim> probe -create -all -depth all
+Created probe 1
+ncsim> ##probe -create -database waves_muxtb -all -depth {muxtb.UUT}
+ncsim> run 100000 ms
+MASTER COMMUNICATING
+START---oe=1,start=0,state=0,i=7,j=7,time=0
+START MASTER---state=0, time=0
+SLAVE COMMUNICATING
+TESTBENCH
+1
+START SLAVE---state=1, time=0
+Address Count=7
+Address 7 bit 600
+Address 7 bit sent=1,600
+Address 7 bit recieved=x time=1900
+Address data=xxxxxxx
+Address 6 bit 3100
+Address 6 bit sent=0,3100
+Address 6 bit recieved=0 time=4400
+Address data=0xxxxxx
+Address 5 bit 5600
+Address 5 bit sent=1,5600
+Address 5 bit recieved=1 time=6900
+Address data=01xxxxx
+Address 4 bit 8100
+Address 4 bit sent=0,8100
+Address 4 bit recieved=0 time=9400
+Address data=010xxxx
+Address 3 bit 10600
+Address 3 bit sent=1,10600
+Address 3 bit recieved=1 time=11900
+Address data=0101xxx
+Address 2 bit 13100
+Address 2 bit sent=0,13100
+Address 2 bit recieved=0 time=14400
+Address data=01010xx
+Address 1 bit 15600
+Address 1 bit sent=0,15600
+Address 1 bit recieved=0 time=16900
+Address data=010100x
+Address 0 bit 18100
+Address 0 bit sent=1,18100
+Address 0 bit recieved=1 time=19400
+Address Recieved=0101001
+Address -1 bit 20600
+Address -1 bit sent=x,20600
+ACK data=0 time=20600
+ACK Recieved=0               21900
+Data 7 bit sent=1,time=23100
+tx_tb=1 time=24400
+Data 6 bit sent=0,time=25600
+tx_tb=0 time=26900
+Data 5 bit sent=1,time=28100
+tx_tb=1 time=29400
+Data 4 bit sent=0,time=30600
+tx_tb=0 time=31900
+Data 3 bit sent=1,time=33100
+tx_tb=1 time=34400
+Data 2 bit sent=0,time=35600
+tx_tb=0 time=36900
+Data 1 bit sent=1,time=38100
+tx_tb=1 time=39400
+Data 0 bit sent=0,time=40600
+tx_tb=0 time=41900
+ ACK Data=1 , time=43100
+ACK Data Recieved=1, time=44400
+ACK Recieved
+DATA memory 10101010
+START MASTER---state=1, time=57500
+START SLAVE---state=1, time=57500
+Address Count=7
+Address 7 bit 58100
+Address 7 bit sent=1,58100
+Address 7 bit recieved=x time=59400
+Address data=0101001
+Address 6 bit 60600
+Address 6 bit sent=0,60600
+Address 6 bit recieved=0 time=61900
+Address data=0101001
+Address 5 bit 63100
+Address 5 bit sent=1,63100
+Address 5 bit recieved=1 time=64400
+Address data=0101001
+Address 4 bit 65600
+Address 4 bit sent=0,65600
+Address 4 bit recieved=0 time=66900
+Address data=0101001
+Address 3 bit 68100
+Address 3 bit sent=1,68100
+Address 3 bit recieved=1 time=69400
+Address data=0101001
+Address 2 bit 70600
+Address 2 bit sent=0,70600
+Address 2 bit recieved=0 time=71900
+Address data=0101001
+Address 1 bit 73100
+Address 1 bit sent=0,73100
+Address 1 bit recieved=0 time=74400
+Address data=0101001
+Address 0 bit 75600
+Address 0 bit sent=1,75600
+Address 0 bit recieved=1 time=76900
+Address Recieved=0101001
+Address -1 bit 78100
+Address -1 bit sent=x,78100
+ACK data=0 time=78100
+ACK Recieved=0               79400
+Data 7 bit sent=1,time=80600
+tx_tb=1 time=81900
+Data 6 bit sent=0,time=83100
+tx_tb=0 time=84400
+Data 5 bit sent=1,time=85600
+tx_tb=1 time=86900
+Data 4 bit sent=0,time=88100
+tx_tb=0 time=89400
+Data 3 bit sent=1,time=90600
+tx_tb=1 time=91900
+Data 2 bit sent=0,time=93100
+tx_tb=0 time=94400
+Data 1 bit sent=1,time=95600
+tx_tb=1 time=96900
+Data 0 bit sent=0,time=98100
+tx_tb=0 time=99400
+ ACK Data=1 , time=100600
+ACK Data Recieved=1, time=101900
+ACK Recieved
+DATA memory 10101010
+Simulation complete via $finish(1) at time 150 US + 0
+./top_module_tb.v:28     $finish;
+ncsim> exit
+TOOL:	irun(64)	13.10-s016: Exiting on Jul 09, 2020 at 09:54:13 IST  (total: 00:00:03)
